@@ -1,0 +1,53 @@
+
+
+
+
+<!-- Portfolio Form Modal -->
+<div class="container mt-5">
+    <form id="portfolioForm" [formGroup]="contactForm" (ngSubmit)="handleSubmitForm()">
+        <!-- Name Input -->
+        <div class="form-group mb-3">
+            <label for="username">Your Name</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter your name" formControlName="username" >
+        </div>
+
+        <!-- Email Input -->
+        <div class="form-group mb-3">
+            <label for="userEmail">Email address</label>
+            <input type="email" class="form-control" id="userEmail" placeholder="Enter email" formControlName="email" >
+        </div>
+
+          <!-- Phone Input -->
+          <div class="form-group mb-3">
+            <label for="userEmail">Phone</label>
+            <input type="text" class="form-control" id="userPhone" placeholder="Enter Phone" formControlName="phone">
+        </div>
+
+        <!-- About You Textarea -->
+        <div class="form-group mb-3">
+            <label for="aboutText">About You</label>
+            <textarea class="form-control" id="aboutText" rows="4" placeholder="Tell us about yourself..." formControlName="notes" required></textarea>
+        </div>
+
+          <!-- Project Upload Input -->
+          <div class="form-group mb-3">
+            <label for="projectUpload">Upload Your Image</label>
+            <input type="file" class="form-control" id="imageUpload" multiple>
+        </div>
+
+        <!-- Project Upload Input -->
+        <div class="form-group mb-3">
+            <label for="projectUpload">Upload Your Projects</label>
+            <input type="file" class="form-control" id="projectUpload" multiple>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Generate Portfolio</button>
+    </form>
+</div>
+
+
+
+
+
+
