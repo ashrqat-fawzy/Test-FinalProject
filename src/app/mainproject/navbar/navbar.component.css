@@ -82,3 +82,25 @@ body {
   }
 }
 /* end of navbar */
+
+/* Global styles for router transitions */
+.router-anim-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.router-anim-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.router-anim-leave {
+  opacity: 1;
+}
+
+.router-anim-leave-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.5s ease-in-out;
+}

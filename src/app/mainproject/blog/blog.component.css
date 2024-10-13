@@ -5,7 +5,9 @@
   min-height: 100vh;
   overflow: hidden;
 }
-
+#blog{
+  margin-top: 20% !important;
+}
 #blog h5 {
   color: #fff;
   font-size: 2rem;

@@ -5,11 +5,11 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-mainproject',
   standalone: true,
-  imports: [NavbarComponent,MainComponent,PortfolioComponent,AboutComponent,BlogComponent,ContactComponent],
+  imports: [NavbarComponent,MainComponent,PortfolioComponent,AboutComponent,BlogComponent,ContactComponent,RouterModule],
   templateUrl: './mainproject.component.html',
   styleUrl: './mainproject.component.css'
 })
